@@ -1,0 +1,118 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+// Variables
+$primary-color: #000000;
+$secondary-color: #F7F9F9;
+$text-color: #2C3E50;
+$border-radius: 8px;
+$transition-speed: 0.3s;
+$font-family: "Bebas Neue", serif;
+
+// Form styles
+form {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: $border-radius;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    font-family: "Bebas Neue", serif;
+    margin-top: 3rem;
+
+    h2 {
+        margin-bottom: 1.5rem;
+        font-size: 5rem;
+        text-align: center;
+        color: $primary-color;
+        font-weight: 600;
+        margin: 2rem;
+    }
+
+    label {
+        display: block;
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: darken($text-color, 10%);
+        margin-top: 3rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.2rem;
+        border: 1px solid #dfe6e9;
+        border-radius: $border-radius;
+        font-size: 3rem;
+        transition: border-color $transition-speed, box-shadow $transition-speed;
+        background-color: #fdfdfd;
+        margin-top: 3rem;
+        font-family: "Oswald", serif;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 8px rgba(46, 134, 193, 0.3);
+        }
+    }
+
+    button {
+        margin-top: 3rem;
+        width: 100%;
+        padding: 0.9rem;
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        border-radius: $border-radius;
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color $transition-speed, transform $transition-speed;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    .form-footer {
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        margin-top: 4rem;
+        color: lighten($text-color, 20%);
+
+        a {
+            color: $primary-color;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color $transition-speed;
+
+            &:hover {
+                color: darken($primary-color, 10%);
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #000000;
+    padding: 1rem;
+    margin-top: 3rem;
+
+    p{
+        color: white;
+        text-align: center;
+        font-family: "Bebas Neue", serif;
+        font-size: 3rem;
+    }
+}

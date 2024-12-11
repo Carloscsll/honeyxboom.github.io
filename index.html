@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey x Boom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class = "header">
+        <div class = "contenedor contenido-header">
+            <h1>Honey x Boom</h1>
+
+            <nav class="navegacion-principal">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#registro">Registro</a>
+                <a href="#productos">Prodcutos</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>¿Listo para sobresalir?</h2>
+                <p>Honey x Boom</p>
+            </div>
+
+        </div>
+        <video autoplay muted loop> 
+            <source src="video/video1.mp4" type="video/mp4"/>
+            <source src="video/video1.mp4" type="video/webm"/>
+            <source src="video/video1.mp4" type="video/ogg"/>
+        </video>
+    </div>
+
+    <section class="sobre-festival" id="nosotros">
+
+        <div class="contenido-festival">
+            <h2>Nosotros</h2>
+            <p>En Honey x Boom, somos más que una marca de ropa: somos una expresión de estilo, actitud y autenticidad. Nacimos en las calles, inspirados por el arte urbano, la música y la cultura que define a una generación que no tiene miedo de romper las reglas. <br><br>
+
+                Nuestro enfoque es simple: crear ropa que represente quién eres, con diseños que mezclan lo clásico del streetwear con lo contemporáneo. Cada prenda está pensada para acompañarte en tu día a día, ya sea conquistando la ciudad, dejando tu huella en el skatepark o marcando tendencia con tu estilo único. <br><br>
+                
+                Creemos en la individualidad, en la creatividad y en la fuerza de la comunidad. Por eso, apoyamos a artistas emergentes, colaboramos con talentos locales y nos esforzamos por construir una plataforma que celebre la autoexpresión. <br><br>
+                
+                Honey x Boom no sigue tendencias, las crea. Aquí no hay límites, solo posibilidades. Bienvenido a nuestro mundo, donde lo urbano se encuentra con lo auténtico y lo cotidiano se transforma en arte. <br><br>
+                
+                Sé tú mismo. Viste tu historia.</p>
+        </div>
+    </section>
+
+    <section id="productos" class="lineup">
+        <h3>Productos</h3>
+    
+        <p class="dia">Honey radical</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario bg-amarillo">
+                <p class="nombre-escenario">Capaz</p>
+    
+                <img src="src/img/img4.jpg" alt="">
+
+                <P>$349</P>
+
+            </div> 
+    
+            <div class="escenario bg-verde">
+                <p class="nombre-escenario">Talento</p>
+    
+                <img src="src/img/img5.jpg" alt="">
+
+                <P>$499</P>
+
+            </div>
+
+            <div class="escenario bg-amarillo">
+                <p class="nombre-escenario">Dominio</p>
+    
+                <img src="src/img/cs.png" alt="">
+                
+            </div>
+
+        </div> 
+    
+    
+        <p class="dia">Boomerang</p>
+        <div class="escenarios-contenedor">
+            <div class="escenario bg-verde">
+                <p class="nombre-escenario">Auténtico</p>
+    
+                <img src="src/img/img1.png" alt="">
+                
+                <P>$549</P>
+
+            </div> 
+    
+            <div class="escenario bg-amarillo">
+                <p class="nombre-escenario">Unico</p>
+    
+                <img src="src/img/img2.png" alt="">
+
+                <P>$499</P>
+
+            </div> 
+
+                <div class="escenario bg-verde">
+                    <p class="nombre-escenario">Diferente</p>
+        
+                    <img class="img1" src="src/img/img3.png" alt="">
+
+                    <br><br>
+
+                    <P class="ptop">$399</P>
+    
+                </div>
+        </div> 
+    </section>
+
+    <section class="photo-gallery" id="galeria">
+        <h1>Galería</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="src/img/gal1.png" alt="Foto 1">
+            </div>
+            <div class="gallery-item">
+                <img src="src/img/gal2.png" alt="Foto 2">
+            </div>
+            <div class="gallery-item">
+                <img src="src/img/gal3.png" alt="Foto 3">
+            </div>
+        </div>
+    </section>
+
+    <center>
+    <form id="registro">
+        <h2>Registrate</h2>
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" placeholder="Tu correo electrónico" required>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="Tu contraseña" required>
+        <button type="submit">Enviar</button>
+        <div class="form-footer">
+            ¿No tienes cuenta? <a href="#">Regístrate aquí</a>
+        </div>
+    </form>
+</center>
+
+<footer class="footer">
+    <p>Todos los derechos reservados hxb.</p>
+</footer>
+
+</body>
+</html>

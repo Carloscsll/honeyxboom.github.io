@@ -1,0 +1,99 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup{
+    background-color: v.$negro;
+    h3, .dia{
+        text-align: center;
+        color: v.$blanco;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: 1rem;
+    }
+
+    .dia{
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+}
+
+.img1{
+    margin-top: 6rem;
+}
+
+.escenarios-contenedor{
+    @include m.contenedor;
+    @include m.tablet{
+        @include m.grid(3)
+    }
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .3rem;
+
+}
+
+
+.escenario {
+    padding-top: 2rem;
+    .nombre-escenario{
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    
+
+}
+
+.calendario{
+    @include m.resetear-lista;
+
+    li{
+        padding: 2rem;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+    }
+}
+
+.bg-amarillo{
+    background-color: v.$blanco;
+    li:nth-child(odd){
+        background-color: lighten(v.$amarillo,10%);
+    }
+
+    &:hover {
+        transform: scale(1.05); 
+    }
+
+    cursor: pointer;
+
+    P{
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+.bg-verde{
+    background-color: v.$blanco;
+    li:nth-child(odd){
+        background-color: lighten(v.$verde,10%);
+    }
+
+    &:hover {
+        transform: scale(1.05); 
+    }
+
+    cursor: pointer;
+
+    P{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .ptop{
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+}
